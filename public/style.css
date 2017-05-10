@@ -1,0 +1,122 @@
+body {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+p {
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+p span {
+    text-transform: uppercase;
+}
+
+#aqiName {
+    font-size: 32px;
+    padding-top: 13px;
+}
+
+#aqi {
+    font-size: 100px;
+    margin-top: -18px;
+}
+
+#temp, .degree {
+    font-size: 38px;
+    padding-top: 22px;
+    padding-left: 7px;
+}
+
+.aqi {
+    font-size: 100px;
+    margin-top: -15px;
+    display: block;
+}
+
+.plusWeather {
+    font-size: 20px;
+    margin-top: -38px;
+    padding-right: 82px;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff
+
+}
+
+.inner-contain {
+    border: #ffffff solid 6px;
+    border-radius: 15px;
+    padding: 18px;
+}
+
+.wi {
+    color: #ffffff;
+    font-size: 71px;
+    padding-top: 30px;
+    padding-bottom: 19px;
+}
+
+.active {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn:focus,.btn:active {
+    color: #ffffff;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+    #aqiName {
+        padding-top: 0;
+    }
+
+    .wi {
+        padding-top: 42px;
+    }
+
+    #temp {
+        padding-top: 5px;
+    }
+
+    .info {
+        padding-top: 26px;
+        padding-bottom: 18px;
+    }
+
+    #aqi {
+        margin-top: 0;
+    }
+
+    #aqiName {
+        font-size: 30px;
+    }
+
+    .plusWeather {
+        font-size: 16px;
+        padding-right: 103px;
+        padding-top: 4px;
+    }
+
+    .finalP {
+        font-size: 10px;
+    }
+}

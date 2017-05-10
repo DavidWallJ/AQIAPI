@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <title>AQI API</title>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 inner-contain">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-center">
+
+
+            <p class="aqi">AQI</p>
+            <p class="text-center plusWeather">+ Weather
+            <p>
+
+            <p id="aqi"></p>
+
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p id="aqiName"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6 text-center">
+                    <i class=""></i>
+                </div>
+                <div class="col-md-6 col-sm-6 text-center">
+                    <p class="degree" data-anijs="if: click, on: button, do: flipInY animated"><span id="temp"></span>°
+                    </p>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-xs active" id="tempC">F</button>
+                        <button type="button" class="btn btn-xs" id="tempF">C</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row info">
+                <div class="col-md-6 col-sm-6  col-xs-12 text-center">
+                    <p><span id="desc"></span></p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+
+                </div>
+                <div class="col-md-6 col-sm-6  col-xs-12 text-center">
+                    <p>Wind Speed: <span id="windSpeed"></span> km/h</p>
+                    <p>Wind Direction: <span id="windDirection"></span></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+        <p style="display: inline-block;" class="finalP">* Background color changes based on the real-time air quality
+            index value. </p>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/AniJS/0.9.3/anijs-min.js"></script>
+<script src="./index.js"></script>
+
+</body>
+
+</html>
